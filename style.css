@@ -1,0 +1,411 @@
+html {
+  font-family: Arial;
+  font-size: 16px;
+  line-height: 2rem;
+  text-align: justified;
+  color: White;
+  background-color: rgb(18, 22, 90);
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+}
+
+/* Header */
+header {
+	font-family: Georgia;
+	font-size: 20px;
+	color: White;
+	text-align: center;
+    background-image: url("header_background.png");
+	background-size: 750px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: rgb(18, 22, 90);
+	padding: 100px;
+}
+
+/* Navigation bar */
+.navbar {
+	font-family: Georgia;
+	font-size: 20px;
+    display: flex;
+    background-color: CornflowerBlue;
+    justify-content: center;
+}
+
+.navbar a {
+    color: PowderBlue;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-color: CornflowerBlue;
+    border-radius: 5px;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: DarkBlue;
+  color: White;
+  text-shadow: 2px 1px LightSteelBlue;
+}
+
+
+/* Main content */
+
+.main {
+	padding: 20px;
+}
+
+h2 {
+	font-family: Georgia;
+	color: PowderBlue;
+	padding: 10px 0px;
+}
+
+h3 {
+	font-family: Georgia;
+	font-size: 26px;
+	color: White;
+	padding: 10px 0px;
+}
+
+.main a {
+    color: SteelBlue;
+}
+
+.cvsection_title {
+	background-color: SteelBlue;
+	color: White;
+	font-size: 16px;
+	padding-left: 10px;
+	border-radius: 10px;
+}
+
+.cvsection{
+	margin: 0px 20px;
+}
+
+.cventry {
+	padding-bottom: 20px;
+}
+
+.cvdate {
+	color: DodgerBlue;
+	margin-left: 20px;
+}
+
+.cvloc {
+	color: DodgerBlue;
+	font-size: 12px;
+}
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-item {
+	width: 200px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+}
+
+.desc {
+  text-align: center;
+}
+
+	
+/* Image */
+img.profile {
+  width: 300px;
+  float: left;
+  padding: 20px;
+}
+
+/* Footer */
+footer {
+	font-family: Georgia;
+    padding: 15px;
+    text-align: center;
+    background: CornFlowerBlue;
+	color: PowderBlue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** {}
+
+body {
+    background-color: lightblue;
+	opacity: ;
+	background-image: url("");
+	background-repeat: repeat-x or repeat-y no-repeat;
+	background-position: right top;
+	margin-right: 200px;
+	background-attachment: fixed or scroll;
+}
+
+div {
+    background: color image position size repeat origin clip attachment;
+	border-style: dotted dashed solid double groove ridge inset outset non hidden;
+}
+
+
+
+h1 {
+	color: white;
+	text-align: center;
+}
+
+p {
+	font-family: verdana;
+	font-size: 20px;
+}
+
+
+#id {}
+.class {}
+elements.class="A B" {}
+
+selector1, selector2, selector3 {}
+/* Comment */
+
+p {
+	width: 300px; /*size of the content within borders margin and padding. Actual size of element is larger.*/
+	/*except if box-sizing: border-box (instead of default content-box*/
+	margin-top: auto 5px 10%; /*margin is outside of borders*/
+	padding-top: ; /*padding is inside of borders*/
+}
+/*margin collapse: when top and bottom margin in contact,
+total margin is the largest margin*/
+
+/*height and width: auto lengthpxcm %*/
+/*max-width is good to set a limit and handlign small browser values*/
+
+/*text
+color: ;
+text-align: center left right justified
+text-align-last: ; for the last line of text
+vertical-align: ; for image in text
+direction: rtl;
+text-decoration-line: none underline overline line-through;
+text-decoration-color: ;
+text-decoration-style: ;
+text-decoration-thickness: ;
+text-transform: capitalize uppercase lowercase;
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#panel, .flip {
+  padding: 10px;
+  text-align: center;
+  background-color: #04AA6D;
+  color: white;
+  border: solid 1px #a6d8a8;
+  margin: auto;
+  cursor:pointer;
+}
+
+#panel {
+  display: none; /*The panel is not shown.*/
+}
+</style>
+</head>
+<body>
+
+<p class="flip" onclick="myFunction()">Click to show panel</p>
+
+<div id="panel">
+  <p>This panel contains a div element, which is hidden by default (display: none).</p>
+  <p>We use JavaScript to show it (display: block).</p>
+  <p>How it works: When the user clicks on the p element, a function called myFunction() is executed, which changes the style of the div with id="panel" from display:none (hidden) to display:block (visible).</p>
+  <p>You will learn more about JavaScript in our JavaScript Tutorial.</p>
+</div>
+
+<script>
+function myFunction() {
+  document.getElementById("panel").style.display = "block";
+}
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#panel, .flip {
+  padding: 10px;
+  text-align: center;
+  background-color: #04AA6D;
+  color: white;
+  border: solid 1px #a6d8a8;
+  margin: auto;
+  cursor: pointer;  
+}
+
+#panel {
+  display: none;
+  cursor: auto;
+}
+</style>
+</head>
+<body>
+
+<p class="flip" onclick="myFunction()">Click to show/hide panel</p>
+
+<div id="panel">
+  <p>The panel toggles between hiding and showing a div element.</p>
+  <p>W use JavaScript to open and close it.</p>
+  <p>You will learn more about JavaScript in our JavaScript Tutorial.</p>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("panel");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
+
+
+<html>
+<head>
+<style>
+div.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+div.gallery-item {
+  margin: 5px;
+  border: 1px solid #ccc;
+  width: 180px;
+}
+
+div.gallery-item:hover {
+  border: 1px solid #777;
+}
+
+div.gallery-item img {
+  width: 100%;
+  height: auto;
+}
+
+div.gallery-item div.desc {
+  padding: 15px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="gallery">
+
+<div class="gallery-item">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="desc">Cinque Terre</div>
+</div>
+
+<div class="gallery-item">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="img_forest.jpg" alt="Forest" width="600" height="400">
+  </a>
+  <div class="desc">Green Forest</div>
+</div>
+
+<div class="gallery-item">
+  <a target="_blank" href="img_lights.jpg">
+    <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
+  </a>
+  <div class="desc">Northern Lights</div>
+</div>
+
+<div class="gallery-item">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc">Mountains</div>
+</div>
+
+</div>
+
+</body>
+</html>
+
+
+
+div.flex-container {
+  display: flex;
+  /* Show the flex items horizontally */
+  flex-direction: row;
+}
+
+div.flex-container > div {
+  margin: 10px;
+}
+
+/* Use media query and show the flex items vertically if screen width is less than 600px */
+@media screen and (max-width:600px) {
+  div.flex-container {
+    flex-direction: column;
+  }
+}
